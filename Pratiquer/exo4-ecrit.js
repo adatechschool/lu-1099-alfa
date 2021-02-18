@@ -17,7 +17,8 @@ const url = 'https://www.affirmations.dev';
  async function getData(url) {
    const data = await fetch(url)
    const resp = await data.json()
-   console.log(resp);
+   console.log(resp) ;
 }
 
-getData(url)
+const result = getData(url);
+console.log(result);
