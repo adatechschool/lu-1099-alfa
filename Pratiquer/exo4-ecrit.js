@@ -10,7 +10,7 @@
 
 
 const fetch = require("node-fetch");
-
+var resp_0 = [];
 const url = 'https://www.affirmations.dev';
 
 
@@ -18,6 +18,9 @@ const url = 'https://www.affirmations.dev';
    const data = await fetch(url)
    const resp = await data.json()
    console.log(resp);
+   resp_0.push(resp);
+
 }
 
 getData(url)
+console.log(resp_0);
